@@ -58,6 +58,33 @@ Main area for file editing, Git actions, run controls, and preview access.
 ### Settings
 Lightweight preferences such as autosave and default layout behavior.
 
+## Information architecture
+The product should be organized into four top-level areas:
+
+1. **Entry**
+   - login
+   - auth callback
+   - basic access/error states
+
+2. **Dashboard**
+   - recent codespaces
+   - running codespaces
+   - stopped codespaces
+   - create/open/start/stop/delete actions
+
+3. **Workspace**
+   - files/search navigation
+   - editor/preview center area
+   - Git/run/ports/logs side panels
+   - fallback entry to the official Codespaces IDE
+
+4. **Settings**
+   - autosave preference
+   - layout preference
+   - local session reset / cache reset
+
+This information structure keeps the product simple: enter, choose a workspace, do focused work, and exit without exposing a desktop-style maze of panels.
+
 ## Success criteria
 - A user can reopen a recent codespace quickly on iPad
 - A user can edit and save files without relying on keyboard shortcuts
